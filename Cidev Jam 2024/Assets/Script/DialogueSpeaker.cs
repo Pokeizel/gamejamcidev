@@ -6,8 +6,9 @@ using UnityEngine;
 public class DialogueSpeaker : MonoBehaviour
 {
     public Dialogue dialogue;
+    public List<Dialogue.lineData> lines;
 
     public void triggerDialogue () {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(lines);
     }
 }

@@ -7,40 +7,39 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
-    public Queue<string> dialogue_lines;
+    public SpriteRenderer spriteR;
+    private Queue<Dialogue.lineData> lines;
     // Start is called before the first frame update
     void Start()
     {
-        dialogue_lines = new Queue<string>();
+        lines = new Queue<Dialogue.lineData>();
     }
 
     void Update() {
-        
+
     }
 
     // Update is called once per frame
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(List<Dialogue.lineData> dialogueLines)
     {
-        nameText.text = dialogue.name;
-        dialogue_lines.Clear();
-        foreach (string sentence in dialogue.sentences) {
-            dialogue_lines.Enqueue(sentence);
+        lines.Clear();
+
+        foreach (Dialogue.lineData line in dialogueLines) {
+            lines.Enqueue(line);
         }
 
         DisplayNextSentence();
-
     }
 
     public void DisplayNextSentence() {
-        if (dialogue_lines.Count == 0) {
+        if (lines.Count == 0) {
             EndDialogue(); return;
         }
-
-        string sentence = dialogue_lines.Dequeue();
-        Debug.Log(sentence);
-        dialogueText.text = sentence;
+        Dialogue.lineData line = lines.Dequeue();
+        nameText.text = line.name;
+        spriteR.sprite = line.portrait;
         StopAllCoroutines();
-        StartCoroutine(UpdateTypewriter(sentence));
+        StartCoroutine(UpdateTypewriter(line.sentence));
     }
 
     void EndDialogue() {

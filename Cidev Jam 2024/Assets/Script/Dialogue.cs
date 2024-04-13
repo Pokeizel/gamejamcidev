@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+
 public class Dialogue
 {
-    public string name;
-
-    [TextArea(3, 10)]
-    public string[] sentences;
+    [System.Serializable]
+    public struct lineData {
+        public string name;
+        public Sprite portrait;
+        public string sentence;
+    }
+    public List<lineData> lines;
 }
