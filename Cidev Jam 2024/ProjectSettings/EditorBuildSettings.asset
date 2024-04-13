@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bar.unity
     guid: 91e9e21b5e2a0f74a83d5943dba215d7
+  - enabled: 1
+    path: Assets/Scenes/acusacion.unity
+    guid: a1c0197550b119e4fa9933edc789a244
   m_configObjects: {}
