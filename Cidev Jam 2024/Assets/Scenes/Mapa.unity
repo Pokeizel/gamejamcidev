@@ -635,7 +635,7 @@ MonoBehaviour:
   vector2: {x: 0, y: 0}
   texture2D_cambio: {fileID: 2800000, guid: 2dff5407fc530564dba09a0bce64fe18, type: 3}
   vector2_cambio: {x: 0, y: 0}
-  onBottonCursorHotSpot: {x: 40, y: 40}
+  onBottonCursorHotSpot: {x: 0, y: 0}
 --- !u!4 &434404896
 Transform:
   m_ObjectHideFlags: 0
