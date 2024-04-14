@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
+using System.Reflection;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public SpriteRenderer spriteR;
     private Queue<Dialogue.lineData> lines;
+    private bool started = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence() {
-        if (lines.Count == 0) {
+        if (lines.Count == 0 ) {
             EndDialogue(); return;
         }
         Dialogue.lineData line = lines.Dequeue();
@@ -47,6 +51,12 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         Debug.Log("fin.");
+        started = false;
+        if (started)
+        {
+            SceneManager.LoadScene(1);
+        }
+
     }
 
     IEnumerator UpdateTypewriter(string sentence) {
@@ -55,5 +65,6 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += token;
             yield return new WaitForSeconds(0.01f);
         }
+        dialogueText.text = sentence;
     }
 }
