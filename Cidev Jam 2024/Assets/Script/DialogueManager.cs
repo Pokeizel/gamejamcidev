@@ -12,7 +12,6 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public SpriteRenderer spriteR;
-    private bool nextScene = true;
     private Queue<Dialogue.lineData> lines;
     bool hasStarted = false;
     [Header("Events")]
