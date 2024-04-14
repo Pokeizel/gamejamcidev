@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: 5a12bb7a707d19a48982528770cf6edb
   - enabled: 1
-    path: Assets/Scenes/Mapa.unity
-    guid: ead396887fbdf48848790fc8e48a4e1c
-  - enabled: 1
     path: Assets/Scenes/crimen.unity
     guid: 032514a447ee4ba4eb038505f1ea45a5
+  - enabled: 1
+    path: Assets/Scenes/Mapa.unity
+    guid: ead396887fbdf48848790fc8e48a4e1c
   - enabled: 1
     path: Assets/Scenes/interrogatorio.unity
     guid: 00e8513e2bd4a3640a7b6e07ec60e63e
