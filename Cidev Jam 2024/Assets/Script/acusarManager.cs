@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 using System;
 using static acusar;
 
-
 public class acusarManager : MonoBehaviour
 {
     public GameObject popup;
@@ -39,12 +38,14 @@ public class acusarManager : MonoBehaviour
         Debug.Log("selected manager "  + ButtonTagManager.selectedButtonTag);
         if (ButtonTagManager.selectedButtonTag == estado.guilty)
         {
-            
+
             SceneManager.LoadScene(6);
+            AudioManager.Instance.PlayAcusarMusic();
         }
         else
         {
             SceneManager.LoadScene(7);
+            AudioManager.Instance.PlayGameMusic();
         }
       
     }

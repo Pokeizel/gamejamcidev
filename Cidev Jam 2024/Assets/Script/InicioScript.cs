@@ -11,6 +11,7 @@ public class InicioScript : MonoBehaviour
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AudioManager.Instance.PlayGameMusic();
 
     }
 
