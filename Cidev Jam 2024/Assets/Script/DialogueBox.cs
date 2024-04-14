@@ -23,7 +23,7 @@ public class DialogueBox : MonoBehaviour
     }
 
     public void GoToMap() {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void GoToTitle() {
         SceneManager.LoadScene(0);
