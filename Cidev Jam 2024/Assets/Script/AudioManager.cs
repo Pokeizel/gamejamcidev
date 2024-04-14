@@ -16,18 +16,20 @@ public class AudioManager : MonoBehaviour
         }
     }
     void Awake() {
-        instance = this;
+        //instance = this;
         if (instance == null) {
             instance = this;
         } else if (instance != this) {
             Destroy(this);
+            if (!instance.audioSource.isPlaying) {
+            instance.audioSource.Play();
+        }
         }
         DontDestroyOnLoad(this);
     }
     void Start()
     {
-
-        audioSource.Play();
+        
     }
 
     // Update is called once per frame
