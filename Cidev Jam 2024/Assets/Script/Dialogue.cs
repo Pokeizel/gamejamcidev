@@ -9,6 +9,7 @@ public class Dialogue
     public struct lineData {
         public string name;
         public Sprite portrait;
+        [TextArea(10,10)]
         public string sentence;
     }
     public List<lineData> lines;

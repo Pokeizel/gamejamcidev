@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Hablar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -377,9 +377,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Textbox
       objectReference: {fileID: 0}
+    - target: {fileID: 3853190708426388866, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 43.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bd8320700a17c54f9c439f65f5612e9, type: 3}
+    - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708496029085, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3853190708657802382, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190709435654154, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6219708483043458833, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
@@ -775,12 +803,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - name: canguru
-    portrait: {fileID: 21300000, guid: dc9382ef790244d2e9f5c4d932798638, type: 3}
-    sentence: holi
-  - name: pato
+  - name: 
     portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
-    sentence: holiwis
+    sentence: Interrogatorio, 10:00 AM
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Le preguntas al peque\xF1o canguro sobre qu\xE9 sabe de la noche anterior."
+  - name: Hijo Canguro
+    portrait: {fileID: 21300000, guid: dc9382ef790244d2e9f5c4d932798638, type: 3}
+    sentence: "Sent\xED que ayer la noche fue igual de aburrida que siempre."
+  - name: Hijo Canguro
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Solo fue hasta el d\xEDa siguiente que... v\xED eso. Pero no sent\xED
+      nada extra\xF1o ayer."
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "El siguiente en ser interrogado es el alcade. Le preguntas qu\xE9
+      sabe sobre el caso y su relaci\xF3n con el doctor."
+  - name: Alcalde
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Ese doctor siempre andaba en asuntos dudosos, \xE9l mismo busc\xF3
+      el peligro\u2026"
+  - name: Alcalde
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Lo siento, eso fue inapropiado. Fue una p\xE9rdida lamentable. Yo
+      estaba en mi oficina y no sal\xED esa noche."
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "A continuaci\xF3n, el repostero."
+  - name: Repostero
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: Estuve con mi hermano anoche. Tuvimos un cierto desacuerdo, y nos fuimos
+      por caminos separados.
+  - name: Repostero
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Yo fui directamente a mi apartamento apenas salimos. No s\xE9 a d\xF3nde
+      fue mi hermano.\n"
+  - name: Repostero
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: Francamente, no quiero saber ahora mismo.
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Le preguntas acerca de la discusi\xF3n con su hermano."
+  - name: Repostero
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: ...No es relevante al caso.
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: Sigue una universitaria y madrre soltera. Su hijo fue la primer persona
+      en encontrar el cuerpo.
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Estuve en el bar esa noche, me fui directamente a casa apenas termin\xE9."
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Estuve en el bar esa noche, me fui directamente a casa apenas termin\xE9."
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "En la ma\xF1ana siguiente, recib\xED una llamada de la polic\xEDa
+      acerca de mi hijo."
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: No puedo terminar de describir mi terror al escuchar que mi hijo estuvo
+      cerca de una escena de crimen...
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Mi hijo cont\xE1ndome que vio un cad\xE1ver cubierto de pelo naranja,
+      mutilado y con un charco de sangre..."
+  - name: Universitaria
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Lo siento, esto es muy dificil para m\xED."
+  - name: 
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: El chef es el siguiente en la lista.
+  - name: Chef
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Fui directamente a mi apartamento, me dol\xEDa la cabeza esa noche."
+  - name: Chef
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "Le preguntas sobre su hermano, quien testifica que estuvo con \xE9l
+      anoche, y sobre qu\xE9 hablaban."
+  - name: Chef
+    portrait: {fileID: 21300000, guid: 6855616bcb8f54df49923869759b6ab3, type: 3}
+    sentence: "No quiero hablar ni saber nada de \xE9l por ahora, lo lamento."
 --- !u!114 &2017277457
 MonoBehaviour:
   m_ObjectHideFlags: 0
