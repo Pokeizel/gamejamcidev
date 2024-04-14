@@ -422,7 +422,7 @@ MonoBehaviour:
     sentence: "Estuve mirando la oficina del alcalde para ver si hacia algo sospechoso.
       Ay, que pesar. Quer\xEDa mucho a ese muchacho. "
   - name: Voz
-    portrait: {fileID: 21300000, guid: fc9fa2981b4cfec40857dd74d1c0aea8, type: 3}
+    portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: 'Es cierto. Debo admitir, yo fui uno de esos que sobornaba. '
   - name: Bartender
     portrait: {fileID: 21300000, guid: 1a7738e813702f0488bfaa7245743995, type: 3}
@@ -437,19 +437,19 @@ MonoBehaviour:
     sentence: " Cerr\xE9 el bar apenas se fueron los kiwis, y me fui a casa inmediatamente.
       En el camino a casa vi al drag\xF3n de komodo."
   - name: Voz
-    portrait: {fileID: 21300000, guid: fc9fa2981b4cfec40857dd74d1c0aea8, type: 3}
+    portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: "El drag\xF3n de komodo no puede confirmar si vio al bartender ir a
       su casa esa noche o no. "
   - name: Voz
-    portrait: {fileID: 21300000, guid: fc9fa2981b4cfec40857dd74d1c0aea8, type: 3}
+    portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: "No me sent\xED amenazado antes de mi muerte. "
-  - name: Profesora
+  - name: Quokka
     portrait: {fileID: 21300000, guid: 95efc79c94cb80b4a8a91452f1950e77, type: 3}
     sentence: "Admit\xF3 haber tenido resentimiento por un suceso en el pasado, pero
       jam\xE1s har\xEDa algo as\xED. Adem\xE1s, estaba muy ocupada preparando el
       material para mis clases de ma\xF1ana toda la noche.  "
   - name: Voz
-    portrait: {fileID: 21300000, guid: fc9fa2981b4cfec40857dd74d1c0aea8, type: 3}
+    portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: "Siempre la not\xE9 muy misteriosa."
 --- !u!114 &653085410
 MonoBehaviour:
