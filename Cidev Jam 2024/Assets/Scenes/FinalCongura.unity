@@ -161,8 +161,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 632, y: 447}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 684.87, y: 439.45}
+  m_SizeDelta: {x: 130.77, y: 25.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500582584
 MonoBehaviour:
@@ -272,40 +272,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - name: "Polic\xEDa"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 6c2656f5bdce957459e55a3c5fc1e985, type: 3}
     sentence: "Se\xF1ora, ya terminamos nuestra investigaci\xF3n y hemos llegado
       a una \xFAnica conclusi\xF3n."
   - name: "Polic\xEDa"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 6c2656f5bdce957459e55a3c5fc1e985, type: 3}
     sentence: "Necesitamos que, por favor, nos brinde su versi\xF3n de los hechos,
       y su rol en este caso."
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: "Pues, de nuevo, estuve en el bar esa noche, me fui directamente a
       casa apenas termin\xE9. A la ma\xF1ana siguiente-"
   - name: "Polic\xEDa"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 6c2656f5bdce957459e55a3c5fc1e985, type: 3}
     sentence: "Se\xF1ora, mentir solo empeorar\xE1 su situaci\xF3n. La evidemcia
       que recolectamos apunta a que usted es culpable."
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: "\xBFPruebas? \xBFQu\xE9 pruebas?  Un trabajo p\xE9simo tuvieron que
       haber hecho para sacar tal conclusi\xF3n."
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: "Tengo un \xFAnico hijo, \xE9l no tiene a nadie m\xE1s, yo j-jam\xE1s-"
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: "Mi esposo, \xE9l- \xE9l no merec\xEDa morir, \xE9l... Todo es su culpa."
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: "\xA1Ese incompetente, sucio doctor, \xE9l no merec\xEDa su t\xEDtulo,
       ni su vida...!"
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: " \xA1La vida de mi esposo val\xEDa m\xE1s que la de \xE9l! Por eso-"
   - name: Universitaria
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: f137ea5067834da42a229b3f15bbad61, type: 3}
     sentence: Por eso, yo, este...
   - name: Universitaria
     portrait: {fileID: 0}
@@ -326,7 +326,6 @@ GameObject:
   m_Component:
   - component: {fileID: 720169413}
   - component: {fileID: 720169412}
-  - component: {fileID: 720169411}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -334,14 +333,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &720169411
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720169410}
-  m_Enabled: 1
 --- !u!20 &720169412
 Camera:
   m_ObjectHideFlags: 0
@@ -458,7 +449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Empezar
+  m_text: Hablar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -633,6 +624,18 @@ PrefabInstance:
     - target: {fileID: 3853190707755999164, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
       propertyPath: m_Name
       value: Textbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2bd8320700a17c54f9c439f65f5612e9, type: 3}
+    - target: {fileID: 3853190708496029085, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190709435654154, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}

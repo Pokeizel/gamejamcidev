@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Comenzar
+  m_text: Hablar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -708,15 +708,15 @@ MonoBehaviour:
     portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: 'Es cierto. Debo admitir, yo fui uno de esos que sobornaba. '
   - name: Bartender
-    portrait: {fileID: 21300000, guid: 1a7738e813702f0488bfaa7245743995, type: 3}
+    portrait: {fileID: 21300000, guid: 84e077a6a4fda524488c6dde81815712, type: 3}
     sentence: " Los hermanos kiwi se quedaron hasta medianoche el d\xEDa del crimen
       tras una agitada discusi\xF3."
   - name: Bartender
-    portrait: {fileID: 21300000, guid: 1a7738e813702f0488bfaa7245743995, type: 3}
+    portrait: {fileID: 21300000, guid: 84e077a6a4fda524488c6dde81815712, type: 3}
     sentence: "Ambas se ve\xEDan deprimidas, pero eso es normal en ese lugar. No
       hab\xEDa nadie m\xE1s en el bar esa noche. "
   - name: Bartender
-    portrait: {fileID: 21300000, guid: 1a7738e813702f0488bfaa7245743995, type: 3}
+    portrait: {fileID: 21300000, guid: 84e077a6a4fda524488c6dde81815712, type: 3}
     sentence: " Cerr\xE9 el bar apenas se fueron los kiwis, y me fui a casa inmediatamente.
       En el camino a casa vi al drag\xF3n de komodo."
   - name: Voz
@@ -727,7 +727,7 @@ MonoBehaviour:
     portrait: {fileID: 21300000, guid: 9ceef8232f96ace46b598652151302e9, type: 3}
     sentence: "No me sent\xED amenazado antes de mi muerte. "
   - name: Quokka
-    portrait: {fileID: 21300000, guid: 95efc79c94cb80b4a8a91452f1950e77, type: 3}
+    portrait: {fileID: 21300000, guid: daadf6e34ee367142bdc55e3bf8faa4b, type: 3}
     sentence: "Admit\xF3 haber tenido resentimiento por un suceso en el pasado, pero
       jam\xE1s har\xEDa algo as\xED. Adem\xE1s, estaba muy ocupada preparando el
       material para mis clases de ma\xF1ana toda la noche.  "
@@ -1034,6 +1034,22 @@ PrefabInstance:
     - target: {fileID: 3853190708426388867, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
       propertyPath: m_Color.r
       value: 0.77647066
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708496029075, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 711.55396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708496029075, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 103.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708496029075, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.01091
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853190708496029075, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.038277
       objectReference: {fileID: 0}
     - target: {fileID: 3853190708496029085, guid: 40edcf68fc59d49e989f695af39e7f6b, type: 3}
       propertyPath: m_Text
