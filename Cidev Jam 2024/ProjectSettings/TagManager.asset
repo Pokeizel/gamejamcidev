@@ -6,6 +6,8 @@ TagManager:
   tags:
   - guilty
   - innocent
+  - yes
+  - no
   layers:
   - Default
   - TransparentFX
