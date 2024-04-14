@@ -434,8 +434,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 279524190}
-        m_TargetAssemblyTypeName: acusar, Assembly-CSharp
-        m_MethodName: isTrueInnocet
+        m_TargetAssemblyTypeName: acusarManager, Assembly-CSharp
+        m_MethodName: BackPopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -492,10 +492,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 279524185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11b0a03b32157f447925be09f34f1b2d, type: 3}
+  m_Script: {fileID: 11500000, guid: ad021db41567704429f5e6d7c2e5aabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 279524187}
+  currentSelect: 0
+  si: {fileID: 2077667592}
+  no: {fileID: 1537386773}
   popup: {fileID: 1125698109}
 --- !u!1 &411241810
 GameObject:
@@ -2152,6 +2154,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975433066}
   m_CullTransparentMesh: 1
+--- !u!1 &1047030722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047030723}
+  m_Layer: 0
+  m_Name: AcusarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1047030723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047030722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1190.526, y: 504.5332, z: 7.076826}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1125698109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,6 +3098,7 @@ GameObject:
   - component: {fileID: 1537386775}
   - component: {fileID: 1537386774}
   - component: {fileID: 1537386773}
+  - component: {fileID: 1537386777}
   m_Layer: 5
   m_Name: botonNo
   m_TagString: no
@@ -3115,7 +3149,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1537386774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1537386777}
+        m_TargetAssemblyTypeName: acusarManager, Assembly-CSharp
+        m_MethodName: BackPopUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1537386774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3175,6 +3221,22 @@ RectTransform:
   m_AnchoredPosition: {x: -615.6, y: -376}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1537386777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537386772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad021db41567704429f5e6d7c2e5aabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSelect: 1
+  si: {fileID: 2077667592}
+  no: {fileID: 1537386773}
+  popup: {fileID: 1125698109}
 --- !u!1 &1586954316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4467,8 +4529,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2077667595}
-        m_TargetAssemblyTypeName: acusar, Assembly-CSharp
-        m_MethodName: isTrueInnocet
+        m_TargetAssemblyTypeName: acusarManager, Assembly-CSharp
+        m_MethodName: ChangeSceneByIndex
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4525,10 +4587,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2077667590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11b0a03b32157f447925be09f34f1b2d, type: 3}
+  m_Script: {fileID: 11500000, guid: ad021db41567704429f5e6d7c2e5aabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yourButton: {fileID: 2077667592}
+  currentSelect: 1
+  si: {fileID: 2077667592}
+  no: {fileID: 279524187}
   popup: {fileID: 1125698109}
 --- !u!1 &2088408151
 GameObject:

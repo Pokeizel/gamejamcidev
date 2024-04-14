@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static acusar;
 
 
 
@@ -12,6 +13,18 @@ public class acusar : MonoBehaviour
     public Button yourButton;
     public GameObject popup;
 
+  
+    public enum estado
+    {
+        guilty,
+        innocet,
+
+    }
+
+    public static class ButtonTagManager
+    {
+        public static estado selectedButtonTag; // Variable estática para almacenar la etiqueta del botón seleccionado
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +38,7 @@ public class acusar : MonoBehaviour
             OutPopUp();
         });
 
+     
     }
 
     // Update is called once per frame
@@ -32,23 +46,20 @@ public class acusar : MonoBehaviour
 
       
         if (yourButton.gameObject.tag == "guilty") {
-            
-            Debug.Log("mal mal");
-            ButtonTagManager.selectedButtonTag = "guilty";
 
-
+            ButtonTagManager.selectedButtonTag = estado.guilty;
+            Debug.Log("tag" + yourButton.gameObject.tag);
+            Debug.Log("selected" + ButtonTagManager.selectedButtonTag);
 
         }
-        if (yourButton.gameObject.tag == "innocent") 
+        if (yourButton.gameObject.tag == "innocent")
         {
-           
-            
-                Debug.Log("no era yo");
-          
-        }
-
+            ButtonTagManager.selectedButtonTag = estado.innocet;
+            Debug.Log("tag" + yourButton.gameObject.tag);
+            Debug.Log("selected" + ButtonTagManager.selectedButtonTag);
 
         }
+       }
 
 
     public void OutPopUp() {
@@ -57,16 +68,8 @@ public class acusar : MonoBehaviour
             isTrueInnocet();
     }
 
-    public void BackPopUp()
-    {
 
-        popup.SetActive(false);
+ 
 
-    }
-
-    public static class ButtonTagManager
-    {
-        public static string selectedButtonTag; // Variable estática para almacenar la etiqueta del botón seleccionado
-    }
 
 }

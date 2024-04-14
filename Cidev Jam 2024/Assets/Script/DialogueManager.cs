@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public SpriteRenderer spriteR;
     private Queue<Dialogue.lineData> lines;
-    private bool started = true;
+    private bool started = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         Debug.Log("fin.");
-        started = false;
+        started = true;
         if (started)
         {
             SceneManager.LoadScene(1);
