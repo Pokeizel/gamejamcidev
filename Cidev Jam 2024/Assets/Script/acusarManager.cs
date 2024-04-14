@@ -40,7 +40,7 @@ public class acusarManager : MonoBehaviour
         if (ButtonTagManager.selectedButtonTag == estado.guilty)
         {
             
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(6);
         }
         else
         {
