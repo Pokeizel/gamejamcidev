@@ -16,7 +16,10 @@ public class DialogueManager : MonoBehaviour
     }
 
     void Update() {
-
+        if (Input.GetButtonDown("Fire1")) {
+            Debug.Log("click!!!!");
+            DisplayNextSentence();
+        }
     }
 
     // Update is called once per frame

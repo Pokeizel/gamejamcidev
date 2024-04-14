@@ -17,6 +17,7 @@ public class DialogueBox : MonoBehaviour
     }
 
     private void OnMouseDown() {
+        Debug.Log("click");
         FindObjectOfType<DialogueManager>().DisplayNextSentence();  
     }
 }
