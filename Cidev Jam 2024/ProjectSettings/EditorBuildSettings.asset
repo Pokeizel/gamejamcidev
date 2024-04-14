@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalCongura.unity
     guid: 22abaa26643282b4c8b1761459d8315f
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: 536e6797768244db09fe425f7dccf852
   m_configObjects: {}

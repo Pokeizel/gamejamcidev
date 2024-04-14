@@ -44,7 +44,7 @@ public class acusarManager : MonoBehaviour
         }
         else
         {
-            BackPopUp();
+            SceneManager.LoadScene(7);
         }
       
     }
