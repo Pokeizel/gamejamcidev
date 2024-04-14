@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 using System.Reflection;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public SpriteRenderer spriteR;
     private Queue<Dialogue.lineData> lines;
+    bool hasStarted = false;
+    [Header("Events")]
+    public GameEvent onDialogueFinished;
  
     // Start is called before the first frame update
     void Start()
@@ -25,10 +29,9 @@ public class DialogueManager : MonoBehaviour
             DisplayNextSentence();
         }
     }
-
-    // Update is called once per frame
     public void StartDialogue(List<Dialogue.lineData> dialogueLines)
     {
+        hasStarted = true;
         lines.Clear();
 
         foreach (Dialogue.lineData line in dialogueLines) {
@@ -50,6 +53,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue() {
+        if (hasStarted) onDialogueFinished.Raise();
         Debug.Log("fin.");
         /*
         started = true;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueBox : MonoBehaviour
 {
@@ -19,5 +20,12 @@ public class DialogueBox : MonoBehaviour
     private void OnMouseDown() {
         Debug.Log("click");
         FindObjectOfType<DialogueManager>().DisplayNextSentence();  
+    }
+
+    public void GoToMap() {
+        SceneManager.LoadScene(1);
+    }
+    public void GoToTitle() {
+        SceneManager.LoadScene(0);
     }
 }

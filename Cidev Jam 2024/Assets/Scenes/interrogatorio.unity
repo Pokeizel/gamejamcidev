@@ -850,11 +850,8 @@ MonoBehaviour:
     sentence: ...No es relevante al caso.
   - name: 
     portrait: {fileID: 21300000, guid: 2bd8320700a17c54f9c439f65f5612e9, type: 3}
-    sentence: Sigue una universitaria y madrre soltera. Su hijo fue la primer persona
+    sentence: Sigue una universitaria y madre soltera. Su hijo fue la primer persona
       en encontrar el cuerpo.
-  - name: Universitaria
-    portrait: {fileID: 21300000, guid: d3c6716dcbc74114893718270777ef31, type: 3}
-    sentence: "Estuve en el bar esa noche, me fui directamente a casa apenas termin\xE9."
   - name: Universitaria
     portrait: {fileID: 21300000, guid: d3c6716dcbc74114893718270777ef31, type: 3}
     sentence: "Estuve en el bar esa noche, me fui directamente a casa apenas termin\xE9."
@@ -879,7 +876,7 @@ MonoBehaviour:
   - name: Chef
     portrait: {fileID: 21300000, guid: 9cad0bf475257b344a88c87124a295f4, type: 3}
     sentence: "Fui directamente a mi apartamento, me dol\xEDa la cabeza esa noche."
-  - name: Chef
+  - name: 
     portrait: {fileID: 21300000, guid: 9cad0bf475257b344a88c87124a295f4, type: 3}
     sentence: "Le preguntas sobre su hermano, quien testifica que estuvo con \xE9l
       anoche, y sobre qu\xE9 hablaban."

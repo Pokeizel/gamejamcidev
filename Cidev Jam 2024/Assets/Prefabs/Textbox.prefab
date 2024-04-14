@@ -152,6 +152,7 @@ MonoBehaviour:
   nameText: {fileID: 3853190709435654154}
   dialogueText: {fileID: 3853190708496029085}
   spriteR: {fileID: 3853190708426388867}
+  onDialogueFinished: {fileID: 11400000, guid: 5d8e2dbad6cf74f2eaeaacf4a4874637, type: 2}
 --- !u!1 &3853190708426388876
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +321,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!1 &3853190708657802383
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,4 +678,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
